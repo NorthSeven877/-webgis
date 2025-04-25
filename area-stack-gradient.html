@@ -1,0 +1,236 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=area-stack-gradient&code=PYBwLglsB2AEC8sDeAoWsDGwA2wBOAXLANoDkAxABwAMAYrQIICspANLBddQCLf1sdyAZgDsDAEz92Fel0oiBM2gCFaXUgF1WaWJDDYApkVTp0YAwA8wRUgHE8AQwAmEA9DCwAymAcYA1gZOsAx4Bg6wAMIAFg54YKQ6AL7aZsA4kCDGOmZ4EADmeQaEHA4WEADObNmwpRUACsAQ7kVZpqZgAJ4gRhwYeMDllSltsNgOAEYG2K0j6OO-fnn9AK7QThE4-DbkAGwOIgCclCzV6InV52fDhoVrM-hODj5EZAAyTQawAIyK79Cf4l-H1gQiB_1gABYwZ8WBoksMwGlsONgBZ7rAAGZhMDLULo9DlBwANwMDHKAEkALYOQrGS6menJHRLCBOdGGDHWDhCACkVTauTyUS5pAhfOGc2AYERlJsvP5piw7gcTVeEymRDAeGWBnhOgsDDK5Re1RMI063RsGCeBjy-A6CraKNWjzwHVsDkymIc2HKBglpkezxIpFggDvlQBZKoBCPMUgHJNQDrToBr5UUAHVAooACpRZaKWi5RSeJ4F1aaC46LQ6DqGiomtpmtoWnqkIk-nUJNr0isEoquY0kU2nWDQByUpt_T4_ANmLpN7AfR2mco-fw2DNSn0LgmUtJgKKa7X-wdz_7eDqGfGmADurN3RGog6Zs3KUWAl88HUpKOm3t9h9msTCU9z2QQd0FAXwIE6O8ADpKCnRVNmKf5L1gAwMBiOJymgpZPSiCAMGg8dYnsZxXHcAAKah2Co2AaK-dhiFA0x61mUxgAxDE_S5KimLaLBcGKUg8DycZyK-cQ4NgcQmCYdgvh2JgAEp21Yq5eJA1S2nYziDC5ej1PQfitg4YTRPo74DnM8QhB2ZT1PpWYNEUh94IMSkQBicoaw01iMWADBlj7Ug_VyAxKhcwcgwcF4vghGjrPEOTqCsnYIXYA4aKEOL2Gk6g4Q7AMWPQYdRxsccpM3XQZxsY8DEqpcFlXddsHq7cpT3XQD3g2qgJ6IqrxvDr71mR8RmfV930_HAiAxH0_XggCHF6i8wJACCoNo2D4MMxCiGQ1D0NiMAsJwjz8MIj5iMcFw3DASjqIe74GPU_rZm0ri722kYjME0z7qk8QrJkuzNNgUbVNekZ3t0oh9NBnaBJsP6RBEOSvgOHLgZU1SHJGJyItmNyPIcLy-0hvyAqCkLe2xhl4KimLxHiyhEu-L4rKynKmfYLLMq-PKLkKwcSrHYFQXgxsavneCGpXDg1x8FqZba29Op1bqPmWnzZmvJxVeGkZwcXF83w_L8Zrmv8RkWrXIfAjBII6GC4KYn69oMFC0Iw47sMcM6CKIvASJuiiaLDuTntByGtI4j7aK-vjdpMkTyJkuSdlZ6SlNpkaE-1zTob0vOEeMoSU_ZnYcqs9GQc03G2nx3PByJzzvPJ_zApsamwpzsH6aeaKSCEbnvmHnLkp5zmLLooR4qZ_K6YHWYRbK4EoQl6qOFq-rlz8JrFdancOq1dWj01zpgMh3X9YJsaTcm82f3mwcbYvvqmPtx3na-t2hw9g7vYnT9nhAOl0g7XTIndcO8cnr9ijgZWAhdPoIN_mXUSWdHpfCENneyedo5sVjjDJ6KCk5oLEtgzBTARC1xxkxRuhtXLuVbmTJiFNO4cG7uFJuswGYkHECPOKmchDmSwWlaeOVZ5yXnoLJeIwV4cHKiwDelot7S0HLLPe8tmqH3avuU-swepvxWrAa-Q1b5tHGqbKa35Zq_m6uqb8kNLF6KtrMEAAxIJQGgDYREIBe5G3QK_M879VKfw2tQLarsk77S9kdIBuFzqB2DpA_60DzKMXgfDRBhDuLF0wKQv6GCLLmWoDQ1iASRj4LAjk2GeTUGFPEGIjO7ARC2V7h2OhzluEjBbiTNurCO5Ux7D3cxgYB4vB2FwHm1BWZfEoBzMRgN4oZTkkwAWHT0BwkSAAbiAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://echarts.apache.org/zh/js/vendors/echarts-gl/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://echarts.apache.org/zh/js/vendors/echarts-stat/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://echarts.apache.org/zh/js/vendors/echarts-graph-modularity/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
+  title: {
+    text: 'Gradient Stacked Area Chart'
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'cross',
+      label: {
+        backgroundColor: '#6a7985'
+      }
+    }
+  },
+  legend: {
+    data: ['Line 1', 'Line 2', 'Line 3', 'Line 4', 'Line 5']
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  xAxis: [
+    {
+      type: 'category',
+      boundaryGap: false,
+      data: [' 叮咚鸡', '大狗叫', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    }
+  ],
+  yAxis: [
+    {
+      type: 'value'
+    }
+  ],
+  series: [
+    {
+      name: 'Line 1',
+      type: 'line',
+      stack: 'Total',
+      smooth: true,
+      lineStyle: {
+        width: 0
+      },
+      showSymbol: false,
+      areaStyle: {
+        opacity: 0.8,
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          {
+            offset: 0,
+            color: 'rgb(128, 255, 165)'
+          },
+          {
+            offset: 1,
+            color: 'rgb(1, 191, 236)'
+          }
+        ])
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [140, 232, 101, 264, 90, 340, 250]
+    },
+    {
+      name: 'Line 2',
+      type: 'line',
+      stack: 'Total',
+      smooth: true,
+      lineStyle: {
+        width: 0
+      },
+      showSymbol: false,
+      areaStyle: {
+        opacity: 0.8,
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          {
+            offset: 0,
+            color: 'rgb(0, 221, 255)'
+          },
+          {
+            offset: 1,
+            color: 'rgb(77, 119, 255)'
+          }
+        ])
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [120, 282, 111, 234, 220, 340, 310]
+    },
+    {
+      name: 'Line 3',
+      type: 'line',
+      stack: 'Total',
+      smooth: true,
+      lineStyle: {
+        width: 0
+      },
+      showSymbol: false,
+      areaStyle: {
+        opacity: 0.8,
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          {
+            offset: 0,
+            color: 'rgb(55, 162, 255)'
+          },
+          {
+            offset: 1,
+            color: 'rgb(116, 21, 219)'
+          }
+        ])
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [320, 132, 201, 334, 190, 130, 220]
+    },
+    {
+      name: 'Line 4',
+      type: 'line',
+      stack: 'Total',
+      smooth: true,
+      lineStyle: {
+        width: 0
+      },
+      showSymbol: false,
+      areaStyle: {
+        opacity: 0.8,
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          {
+            offset: 0,
+            color: 'rgb(255, 0, 135)'
+          },
+          {
+            offset: 1,
+            color: 'rgb(135, 0, 157)'
+          }
+        ])
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [220, 402, 231, 134, 190, 230, 120]
+    },
+    {
+      name: 'Line 5',
+      type: 'line',
+      stack: 'Total',
+      smooth: true,
+      lineStyle: {
+        width: 0
+      },
+      showSymbol: false,
+      label: {
+        show: true,
+        position: 'top'
+      },
+      areaStyle: {
+        opacity: 0.8,
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          {
+            offset: 0,
+            color: 'rgb(255, 191, 0)'
+          },
+          {
+            offset: 1,
+            color: 'rgb(224, 62, 76)'
+          }
+        ])
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [600, 302, 181, 234, 210, 290, 150]
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
